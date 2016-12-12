@@ -15,4 +15,4 @@ typings/*
 npm-debug.log
 
 nbproject/*
-dist/*
+#dist/*

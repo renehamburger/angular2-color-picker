@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,23 +7,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var common_1 = require("@angular/common");
-var color_picker_service_1 = require("./color-picker.service");
-var color_picker_directive_1 = require("./color-picker.directive");
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ColorPickerService } from './color-picker.service';
+import { ColorPickerDirective, DynamicCpModule } from './color-picker.directive';
 var ColorPickerModule = (function () {
     function ColorPickerModule() {
     }
     return ColorPickerModule;
 }());
 ColorPickerModule = __decorate([
-    core_1.NgModule({
-        imports: [common_1.CommonModule, color_picker_directive_1.DynamicCpModule],
-        providers: [color_picker_service_1.ColorPickerService],
-        declarations: [color_picker_directive_1.ColorPickerDirective],
-        exports: [color_picker_directive_1.ColorPickerDirective]
+    NgModule({
+        imports: [CommonModule, DynamicCpModule],
+        providers: [ColorPickerService],
+        declarations: [ColorPickerDirective],
+        exports: [ColorPickerDirective]
     }),
     __metadata("design:paramtypes", [])
 ], ColorPickerModule);
-exports.ColorPickerModule = ColorPickerModule;
+export { ColorPickerModule };
 //# sourceMappingURL=color-picker.module.js.map

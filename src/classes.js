@@ -1,4 +1,3 @@
-"use strict";
 var Hsva = (function () {
     function Hsva(h, s, v, a) {
         this.h = h;
@@ -8,7 +7,7 @@ var Hsva = (function () {
     }
     return Hsva;
 }());
-exports.Hsva = Hsva;
+export { Hsva };
 var Hsla = (function () {
     function Hsla(h, s, l, a) {
         this.h = h;
@@ -18,7 +17,7 @@ var Hsla = (function () {
     }
     return Hsla;
 }());
-exports.Hsla = Hsla;
+export { Hsla };
 var Rgba = (function () {
     function Rgba(r, g, b, a) {
         this.r = r;
@@ -28,7 +27,7 @@ var Rgba = (function () {
     }
     return Rgba;
 }());
-exports.Rgba = Rgba;
+export { Rgba };
 var SliderPosition = (function () {
     function SliderPosition(h, s, v, a) {
         this.h = h;
@@ -38,7 +37,7 @@ var SliderPosition = (function () {
     }
     return SliderPosition;
 }());
-exports.SliderPosition = SliderPosition;
+export { SliderPosition };
 var SliderDimension = (function () {
     function SliderDimension(h, s, v, a) {
         this.h = h;
@@ -48,5 +47,5 @@ var SliderDimension = (function () {
     }
     return SliderDimension;
 }());
-exports.SliderDimension = SliderDimension;
+export { SliderDimension };
 //# sourceMappingURL=classes.js.map
